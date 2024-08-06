@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Text?>
+
+<StackPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assignment3javafx.MainController">
+   <children>
+      <AnchorPane fx:id="mainPage" prefHeight="252.0" prefWidth="586.0">
+         <children>
+            <Text layoutX="211.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME TO CALCULATOR APP " />
+            <Label fx:id="currentDate" layoutX="446.0" layoutY="24.0" prefHeight="18.0" prefWidth="114.0" text="Label" />
+            <Button fx:id="simpleCalculator" layoutX="124.0" layoutY="113.0" mnemonicParsing="false" onAction="#simpleCalculatorButton" text="Simple Calculator" />
+            <Button fx:id="temperatureCalculator" layoutX="328.0" layoutY="113.0" mnemonicParsing="false" onAction="#tempButton" text="Temperature Calculator" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="mainPage1" prefHeight="252.0" prefWidth="586.0" visible="false">
+         <children>
+            <Text layoutX="204.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME TO CALCULATOR APP " />
+            <TextField fx:id="input1" layoutX="219.0" layoutY="80.0" />
+            <TextField fx:id="input2" layoutX="220.0" layoutY="126.0" />
+            <Button fx:id="addition" layoutX="179.0" layoutY="170.0" mnemonicParsing="false" onAction="#addition" text="+ (Addition)" />
+            <Button fx:id="subtraction" layoutX="62.0" layoutY="170.0" mnemonicParsing="false" onAction="#subtraction" text="- (Subtraction)" />
+            <Button fx:id="multiply" layoutX="288.0" layoutY="170.0" mnemonicParsing="false" onAction="#multiply" text="* (Multiply)" />
+            <Button fx:id="division" layoutX="404.0" layoutY="170.0" mnemonicParsing="false" onAction="#division" text="/ (Division)" />
+            <Button fx:id="mainMenu1" layoutX="50.0" layoutY="46.0" mnemonicParsing="false" onAction="#mainMenu" text="Back" />
+            <Label fx:id="result" layoutX="254.0" layoutY="209.0" text="RESULT HERE: " />
+            <Text layoutX="138.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" INPUT 1 :" />
+            <Text layoutX="139.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INPUT 2 :" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="mainPage2" prefHeight="200.0" prefWidth="200.0" visible="false">
+         <children>
+            <TextField fx:id="tempInput" layoutX="207.0" layoutY="62.0" />
+            <Button fx:id="convertCelsiusToFahrenheit" layoutX="81.0" layoutY="126.0" mnemonicParsing="false" onAction="#convertCelsiusToFahrenheit" text="convertCelsiusToFahrenheit" />
+            <Button fx:id="convertFahrenheitToCelsius" layoutX="332.0" layoutY="126.0" mnemonicParsing="false" onAction="#convertFahrenheitToCelsius" text="convertFahrenheitToCelsius" />
+            <Label fx:id="result1" layoutX="254.0" layoutY="196.0" text="RESULT HERE: " />
+            <Button fx:id="mainMenu" layoutX="40.0" layoutY="36.0" mnemonicParsing="false" onAction="#mainMenu" text="Back" />
+            <Text layoutX="262.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INPUT :" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
